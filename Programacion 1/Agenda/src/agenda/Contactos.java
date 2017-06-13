@@ -3,10 +3,11 @@ package agenda;
 
 
 public class Contactos {
-   private String _nombre;
-    private String _direccion;
-    private String _codPostal;
-    private String _telefono;
+   private String _nombre = "";
+    private String _direccion="";
+    private String _codPostal="";
+    private String _telefono="";
+    public Contactos ct;
     
     //Constructor
     public Contactos(){}
@@ -25,8 +26,20 @@ public class Contactos {
     //Mostrar contactos
     public void MostradContac(){
     
-        System.out.println("Nombre: " + this._nombre + "\nDireccion: " + this._direccion + "Codigo postal: \n" + this._codPostal + "\nTelefono: " + this._telefono + "\n__________________________");
+        System.out.println("_____________________________\nNombre: " + this._nombre + "\nDireccion: " + this._direccion + "\nCodigo postal: " + this._codPostal + "\nTelefono: " + this._telefono + "\n__________________________");
     
     }
+//    public Contactos getInstance(){
+//        if (ct != null) {
+//            ct = new Contactos();
+//        }
+//        return this;
+//    }
+    
+    public void AgregarContactos(String nom, String dire,String cod,String te){
+            
+    this._nombre = nom;this._direccion = dire;this._codPostal = cod;this._telefono = te;
+    }
+
     
 }
