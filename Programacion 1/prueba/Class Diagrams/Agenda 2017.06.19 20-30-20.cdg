@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Agenda">
+  <ClassDiagramComponents>
+    <Class name="Agenda" package="agenda" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AgendaA" package="Controlador" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="contactos" type="Contactos" visibility="public"/>
+        <Field name="Leer" type="BufferedReader" visibility="package"/>
+        <Field name="A" type="String[]" visibility="package"/>
+        <Field name="b" type="int" visibility="public"/>
+        <Field name="a" type="int" visibility="public" isStatic="true"/>
+        <Field name="controlador" type="int" visibility="public"/>
+        <Field name="fechaContro" type="Date[]" visibility="public" isStatic="true"/>
+        <Field name="feli" type="String[]" visibility="public" isStatic="true"/>
+        <Field name="leer" type="Scanner" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="AgregarContactos" returnType="void" visibility="public">
+          <Argument type="String" name="nom"/>
+          <Argument type="String" name="dire"/>
+          <Argument type="String" name="cod"/>
+          <Argument type="String" name="te"/>
+          <Argument type="String" name="correo"/>
+          <Argument type="String" name="URL"/>
+          <Argument type="String" name="TeCasa"/>
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="AgregarContactos" returnType="void" visibility="public">
+          <Argument type="String" name="nom"/>
+          <Argument type="String" name="dire"/>
+          <Argument type="String" name="cod"/>
+          <Argument type="String" name="te"/>
+          <Argument type="String" name="correo"/>
+          <Argument type="String" name="URL"/>
+          <Argument type="String" name="teOfi"/>
+          <Argument type="String" name="nombreC"/>
+          <Argument type="String" name="exTenOfi"/>
+        </Method>
+        <Method name="ListarContactos" returnType="void" visibility="public"/>
+        <Method name="BuscarNombre" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="BuscarNumero" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="ModificarTele" returnType="void" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+        <Method name="BorrarTele" returnType="void" visibility="public"/>
+        <Method name="Invitacion" returnType="void" visibility="public">
+          <Argument type="String" name="invitacion"/>
+        </Method>
+        <Method name="RecoEnvia" returnType="void" visibility="public">
+          <Argument type="String" name="nomas"/>
+        </Method>
+        <Method name="ReordatorioHBD" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Contactos" package="Modelo" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="_nombre" type="String" visibility="private"/>
+        <Field name="_direccion" type="String" visibility="private"/>
+        <Field name="_codPostal" type="String" visibility="private"/>
+        <Field name="_telefono" type="String" visibility="private"/>
+        <Field name="_correo" type="String" visibility="private"/>
+        <Field name="_url" type="String" visibility="private"/>
+        <Field name="_invi" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="_n"/>
+          <Argument type="String" name="_d"/>
+          <Argument type="String" name="_codP"/>
+          <Argument type="String" name="_telefono"/>
+          <Argument type="String" name="_correo"/>
+          <Argument type="String" name="_url"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="d"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setCodipostal" returnType="void" visibility="public">
+          <Argument type="String" name="cod"/>
+        </Method>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="tele"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="getCodigopostal" returnType="String" visibility="public"/>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="_url"/>
+        </Method>
+        <Method name="getInvi" returnType="String" visibility="public"/>
+        <Method name="setInvi" returnType="void" visibility="public">
+          <Argument type="String" name="_invi"/>
+        </Method>
+        <Method name="MostradContac" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ContactosLaborales" package="Modelo" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="_telefonoOficina" type="String" visibility="private"/>
+        <Field name="_nombreCom" type="String" visibility="private"/>
+        <Field name="_extensionOfici" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="_n"/>
+          <Argument type="String" name="_d"/>
+          <Argument type="String" name="_codP"/>
+          <Argument type="String" name="_telefono"/>
+          <Argument type="String" name="_correo"/>
+          <Argument type="String" name="_url"/>
+          <Argument type="String" name="_teOfi"/>
+          <Argument type="String" name="_nombreCom"/>
+          <Argument type="String" name="_extencionOfi"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setTelefonoOfi" returnType="void" visibility="public">
+          <Argument type="String" name="te"/>
+        </Method>
+        <Method name="setNombreCompi" returnType="void" visibility="public">
+          <Argument type="String" name="com"/>
+        </Method>
+        <Method name="setExtensionOfici" returnType="void" visibility="public">
+          <Argument type="String" name="ex"/>
+        </Method>
+        <Method name="getTelefonoOfi" returnType="String" visibility="public"/>
+        <Method name="getNombreCom" returnType="String" visibility="public"/>
+        <Method name="getExtencionOfici" returnType="String" visibility="public"/>
+        <Method name="MostradContac" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ContactosPersonales" package="Modelo" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="_telefonoCasa" type="String" visibility="private"/>
+        <Field name="_fechaCumple" type="Date" visibility="public" isStatic="true"/>
+        <Field name="F" type="SimpleDateFormat" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="_n"/>
+          <Argument type="String" name="_d"/>
+          <Argument type="String" name="_codP"/>
+          <Argument type="String" name="_telefono"/>
+          <Argument type="String" name="_correo"/>
+          <Argument type="String" name="_url"/>
+          <Argument type="String" name="_telefonoCasa"/>
+          <Argument type="String" name="fech"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTelefonoCasa" returnType="String" visibility="public"/>
+        <Method name="setTelefonoCasa" returnType="void" visibility="public">
+          <Argument type="String" name="_telefonoCasa"/>
+        </Method>
+        <Method name="getFechaCumple" returnType="Date" visibility="public" isStatic="true"/>
+        <Method name="setFechaCumple" returnType="void" visibility="public">
+          <Argument type="Date" name="_fechaCumple"/>
+        </Method>
+        <Method name="fechaActual" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="fechaUSer" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="f"/>
+        </Method>
+        <Method name="MostradContac" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Modelo.ContactosLaborales" target="Modelo.Contactos"/>
+    <HasRelation name="contactos" source="Controlador.AgendaA" target="Modelo.Contactos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Modelo.ContactosPersonales" target="Modelo.Contactos"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
