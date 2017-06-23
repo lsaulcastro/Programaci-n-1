@@ -80,9 +80,8 @@ public class AgendaA {
             contactos[controlador][i].MostradContac();
                 if (controlador == 0 && A[i] != null) {
                      System.out.println(A[i]);
-                }
-               
-      //          RecoEnvia(contactos[controlador][i].getNombre());
+                }               
+      //         RecoEnvia(contactos[controlador][i].getNombre());
             }
         }
         } catch (Exception e) {

@@ -21,7 +21,7 @@ public class Encriptacion {
     public static Encriptador encri = new Encriptador();
     
     public static void main(String[] args) {
-        
+        EncriptacionXOR();
        
     }
     //Encriptacion por el metodo XOR

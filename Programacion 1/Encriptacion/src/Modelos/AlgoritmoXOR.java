@@ -12,7 +12,7 @@ package Modelos;
 public class AlgoritmoXOR extends Algoritmo{
 
     public AlgoritmoXOR() {
-        codigoSecreto = 2;
+        codigoSecreto = 8174;
     }
     
 
