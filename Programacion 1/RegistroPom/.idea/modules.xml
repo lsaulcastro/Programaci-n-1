@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RegistroPom.iml" filepath="$PROJECT_DIR$/RegistroPom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RegistrosBusines/RegistrosBusines.iml" filepath="$PROJECT_DIR$/../RegistrosBusines/RegistrosBusines.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RegistrosGui/RegistrosGui.iml" filepath="$PROJECT_DIR$/../RegistrosGui/RegistrosGui.iml" />
+    </modules>
+  </component>
+</project>

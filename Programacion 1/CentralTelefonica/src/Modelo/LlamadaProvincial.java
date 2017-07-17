@@ -1,10 +1,12 @@
 package Modelo;
 
+import java.text.DecimalFormat;
+
 public class LlamadaProvincial extends LLamada {
 
-    private final double precio1 = 20;
-    private final double precio2 = 25;
-    private final double precio3 = 30;
+    private final double precio1 = 0.20d;
+    private final double precio2 = 0.25d;
+    private final double precio3 = 0.30d;
     private int franja;
 
     public LlamadaProvincial(int franja, String numOrigen, String numDestino, double duracion) {
@@ -14,22 +16,31 @@ public class LlamadaProvincial extends LLamada {
 
     @Override
     public double CalcularPrecio() {
+        DecimalFormat formateador = new DecimalFormat("####.##");
         if (this.franja == 1) {
-            return this.precio1 * super.getDuracion();
+            return Double.parseDouble(formateador.format(this.precio1 * super.getDuracion()));
 
         }
         if (this.franja == 2) {
-            return this.precio2 * super.getDuracion();
+            return Double.parseDouble(formateador.format(this.precio2 * super.getDuracion()));
         }
         if (this.franja == 3) {
-            return this.precio3 * super.getDuracion();
+            return Double.parseDouble(formateador.format(this.precio3 * super.getDuracion()));
         }
         return 0;
     }
     
     @Override
     public String toString() {
-        String MostrarDatos= "";
+         DecimalFormat formateador = new DecimalFormat("####.##");
+        String MostrarDatos = 
+                    "\n###############Factura de llamada################\n"
+                +   " Numero de Origen:" +super.getNumOrigen()+"\n"
+                +   " Numero Destino:" +super.getNumDestino()+"\n"
+                +   " Duracion:" +super.getDuracion()+"\n"
+                +   " Precio de LLamada:" +formateador.format(CalcularPrecio())+"\n"
+                +   " Franja numero:"+ this.franja +"\n"
+                +   "#################################################\n\n" ;
         return MostrarDatos;
     }
 }
